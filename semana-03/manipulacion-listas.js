@@ -223,3 +223,18 @@ console.log('después ->', listaDeNumerosCopyWithin);
 let listaDeNumerosLastIndexOf = [1, 2, 3, 4, 5, 3];
 
 console.log(listaDeNumerosLastIndexOf.lastIndexOf(3));
+
+// HACKATON: Manipulando Listas (Arreglos)
+
+/**
+ 1. Eliminar duplicados en una lista (pueden ser numeros o strings)
+ 2. Mayor producto de tres números: Dada una lista de números enteros, encuentra el mayor
+    producto que se puede obtener al multiplicar tres de esos números.
+ 3. Ordenar lista de objetos personalizados: Supongamos que tienes una lista de objetos
+    personalizados y deseas ordenarlos según un atributo específico de cada objeto.
+    Escribe una función que permita ordenar la lista en función de ese atributo.
+ 4. Subconjunto con suma máxima: Dada una lista de números enteros, encuentra el subconjunto
+    no vacío de elementos contiguos cuya suma sea máxima.
+ 5. Encontrar el número que falta: Tienes una lista de números enteros que contiene todos
+    los números del 1 al n, excepto uno. Encontrar el número que falta en la lista.
+ */

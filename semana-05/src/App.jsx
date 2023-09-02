@@ -1,41 +1,12 @@
-import { useState, useEffect } from 'react';
-import { Funcional } from './components/Funcional';
-import { Clase } from './components/Clase';
+import styles from './App.module.css';
 
-// componente funcional
+// HACKATON:
+// ver esta imagen para ver los detalles de la hackaton https://i.imgur.com/Gja9277.png
+
 function App() {
-	const [componenteFuncionalEsVisible, setComponenteFuncionalEsVisible] =
-		useState(true);
-	const [contador, setContador] = useState(0);
-
-	useEffect(() => {
-		const intervalId = setInterval(() => {
-			setContador((prevContador) => prevContador + 1);
-		}, 1000);
-
-		return () => {
-			clearInterval(intervalId);
-		};
-	}, [componenteFuncionalEsVisible]);
-
 	return (
 		<div>
-			{componenteFuncionalEsVisible ? (
-				<Funcional contador={contador} />
-			) : (
-				<Clase contador={contador} />
-			)}
-
-			<br />
-
-			<button
-				onClick={() => {
-					setComponenteFuncionalEsVisible(!componenteFuncionalEsVisible);
-				}}
-			>
-				Mostrar componente{' '}
-				{componenteFuncionalEsVisible ? 'clase' : 'funcional'}
-			</button>
+			<button className={styles.boton}>Mi botón</button>
 		</div>
 	);
 }

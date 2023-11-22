@@ -3,7 +3,8 @@ import Axios from "axios";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
 export const TOKEN_KEY = "@token";
-export const BASE_API = "http://192.168.1.112:3000";
+// export const BASE_API = "http://192.168.1.104:3000";
+export const BASE_API = "http://192.168.1.102:3000";
 
 export const AuthContext = createContext(null);
 
@@ -153,6 +154,10 @@ export const AuthProvider = ({ children }) => {
 
     getMyProfile();
   }, [authState.token]);
+
+  useEffect(() => {
+    console.log("DEBUG");
+  }, []);
 
   return (
     <AuthContext.Provider
